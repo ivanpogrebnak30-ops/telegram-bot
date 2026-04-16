@@ -11,7 +11,7 @@ from aiogram.filters import CommandStart
 logging.basicConfig(level=logging.INFO)
 
 # 🔑 токен (ОБЯЗАТЕЛЬНО через Render Environment)
-BOT_TOKEN = os.getenv("8333349750:AAFpxCIU3z5ly__Y1AhK1Dkg2f1wC7W5rCM")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
@@ -63,4 +63,4 @@ async def chat(message: types.Message):
     text = message.text.lower()
 
     # игнор команд
-    if
+    
