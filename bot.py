@@ -63,4 +63,9 @@ async def chat(message: types.Message):
     text = message.text.lower()
 
     # игнор команд
-    
+
+async def main():
+    await dp.start_polling(bot)
+
+if __name__ == "__main__":
+    asyncio.run(main())
